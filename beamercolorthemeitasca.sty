@@ -1,0 +1,56 @@
+\mode<presentation>
+
+\newif\if@doHighContrast
+\@doHighContrastfalse
+\DeclareOption{highcontrast}{\@doHighContrasttrue}
+\ProcessOptions
+
+% Color Definitions
+\if@doHighContrast
+	\definecolor{iBlue}{HTML}{21759B}
+	\definecolor{iBlack}{HTML}{000000}
+	\definecolor{iGray}{HTML}{757575}
+	\definecolor{iRed}{HTML}{953838}
+	\definecolor{iWhite}{HTML}{FFFFFF}
+\else
+	\definecolor{iBlue}{HTML}{21759B}
+	\definecolor{iBlack}{HTML}{444444}
+	\definecolor{iGray}{HTML}{757575}
+	\definecolor{iRed}{HTML}{953838}
+	\definecolor{iWhite}{HTML}{FAFAFA}
+\fi
+
+% Settings
+\setbeamercolor{palette primary}{fg=iBlue}
+\setbeamercolor{palette secondary}{fg=iBlack}
+
+\setbeamercolor{title}{parent=palette primary}
+\setbeamercolor{subtitle}{parent=palette primary}
+\setbeamercolor{author}{parent=palette secondary}
+\setbeamercolor{date}{parent=palate secondary}
+
+\setbeamercolor{frametitle}{parent=palette primary}
+\setbeamercolor{section in head/foot}{parent=palette secondary}
+
+\setbeamercolor{normal text}{fg=iBlack}
+\setbeamercolor{alerted text}{fg=iRed}
+
+\setbeamercolor{section in toc}{parent=palette secondary}
+
+\setbeamercolor{caption name}{parent=palette primary}
+
+\setbeamercolor{footline}{fg=iBlack!60}
+
+\setbeamercolor{item}{parent=palette primary}
+
+\setbeamercolor{navigation symbols dimmed}{fg=iGray!30}
+\setbeamercolor{navigation symbols}{fg=iBlack!30}
+
+\setbeamercolor{block title}{use=structure, parent=palette primary, bg=iBlack!20}
+\setbeamercolor{block body}{use=structure, parent=palette secondary, bg=iBlack!20}
+
+\setbeamercolor{background canvas}{bg=iWhite}
+
+\hypersetup{colorlinks, linkcolor=, urlcolor=iBlue}
+
+\mode<all>

@@ -1,0 +1,21 @@
+\mode<presentation>
+
+\newif\if@doHighContrast
+\@doHighContrastfalse
+\DeclareOption{highcontrast}{\@doHighContrasttrue}
+\ProcessOptions
+
+% Requirement
+\RequirePackage{tikz}
+
+% Settings
+\useinnertheme{itasca}
+\useoutertheme{itasca}
+\if@doHighContrast
+	\usecolortheme[highcontrast]{itasca}
+\else
+	\usecolortheme{itasca}
+\fi
+\usefonttheme{itasca}
+
+\mode<all>

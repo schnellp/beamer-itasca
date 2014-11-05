@@ -1,0 +1,51 @@
+\mode<presentation>
+
+% Title page
+\defbeamertemplate*{title page}{itasca}[1][]{
+
+	
+	\begin{beamercolorbox}[#1]{title}
+		\centering
+		\usebeamerfont{title}\inserttitle
+	\end{beamercolorbox}
+
+	\vskip0.1cm
+
+	\begin{beamercolorbox}{subtitle}
+		\centering
+		\usebeamerfont{subtitle}\insertsubtitle
+	\end{beamercolorbox}
+
+	\vskip0.75cm
+
+	\begin{beamercolorbox}{author}
+		\centering
+		\usebeamerfont{author}\insertauthor
+	\end{beamercolorbox}
+
+	\vskip0.2cm
+
+	\begin{beamercolorbox}{date}
+		\centering
+		\usebeamerfont{date}\insertdate
+	\end{beamercolorbox}
+}
+
+% Section Page
+\defbeamertemplate*{section page}{itasca}[1][]{
+
+	\begin{beamercolorbox}{}
+
+	\end{beamercolorbox}
+
+	\vskip3cm
+	
+	\begin{beamercolorbox}[#1]{title}
+		\centering
+		\usebeamerfont{title}\insertsection
+	\end{beamercolorbox}
+}
+
+\setbeamertemplate{qed symbol}{\color{iBlack}$\blacksquare$}
+
+\mode<all>

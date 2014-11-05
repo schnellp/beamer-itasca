@@ -1,0 +1,31 @@
+\mode<presentation>
+
+\defbeamertemplate*{headline}{miniframes theme}{
+  \begin{beamercolorbox}[colsep=1.5pt]{upper separation line head}
+  \end{beamercolorbox}
+  \begin{beamercolorbox}{section in head/foot}
+    \vskip2pt
+    \insertnavigation{\paperwidth}
+    \vskip2pt
+  \end{beamercolorbox}
+  \begin{beamercolorbox}[colsep=1.5pt]{lower separation line head}
+    \makebox{\color{iBlack!30}\rule{\paperwidth}{0.4pt}}
+  \end{beamercolorbox}
+}
+
+\setbeamertemplate{footline}{
+  \leavevmode
+  \hbox{\begin{beamercolorbox}[wd=\paperwidth,ht=0ex,dp=0ex,center]{frame number}
+    \vskip0pt
+    \usebeamerfont{footline}\usebeamercolor[fg]{footline}
+    \insertframenumber
+    \vskip.5ex
+    \end{beamercolorbox}
+  }
+  \vskip0pt
+}
+
+\setbeamertemplate{navigation symbols}{}
+
+\mode
+<all>
