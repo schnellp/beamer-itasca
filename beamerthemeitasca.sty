@@ -2,17 +2,14 @@
 
 \newif\if@doHighContrast
 \@doHighContrastfalse
-\DeclareOption{highcontrast}{\@doHighContrasttrue}
+\DeclareOption{high-contrast}{\@doHighContrasttrue}
 \ProcessOptions
-
-% Requirement
-\RequirePackage{tikz}
 
 % Settings
 \useinnertheme{itasca}
 \useoutertheme{itasca}
 \if@doHighContrast
-	\usecolortheme[highcontrast]{itasca}
+	\usecolortheme[high-contrast]{itasca}
 \else
 	\usecolortheme{itasca}
 \fi
