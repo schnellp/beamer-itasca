@@ -3,6 +3,7 @@ Itasca Beamer Theme
 
 Itasca is a Beamer theme designed to be functional and visually appealing both in live presentation and personal use.
 It uses varying levels of contrast to provide useful information on demand without distracting from the primary slide content.
+An example presentation is available [here](https://github.com/schnellp/beamer-itasca/releases/download/v1.0.0/example.pdf).
 
 Requirements
 ------------
